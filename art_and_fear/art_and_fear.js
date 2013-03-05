@@ -1,0 +1,3 @@
+function whenItHappens() {
+    whenItHappens();
+}
