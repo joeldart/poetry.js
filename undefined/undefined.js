@@ -7,7 +7,7 @@ function inMyName() {
     var acceptance,  love, healing, connection, community, assurance,
         persecution, hate, death,   isolation,  division,  doubt;
 
-    aceeptance = persecution =
+    acceptance = persecution =
     love = hate =
     healing = death =
     connection = isolation = 
