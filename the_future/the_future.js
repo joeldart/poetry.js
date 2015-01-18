@@ -1,5 +1,5 @@
 function* ourCurrentState(isBleak) {                                var
-    nietzche, declared;      function God()     { ({"is":"dead"}) ;}
+    nietzsche, declared;     function God()     { ({"is":"dead"}) ;}
     ;grandJuries=declared;   function justice() { ({"is":"dead"}) ;};var
     toWhere, can, we, turn;  function toRedeem(){ ({"such":"loss"}); }
     
