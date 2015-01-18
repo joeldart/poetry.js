@@ -11,13 +11,13 @@
                                             });
            
 
-  var   littleCoder,       yourWay, advice,              dontLet=function(){return{"is":noop};},              out,
-  willPeople =  { say:noop}, p,though=noop,              advice,truly,good, e, love=function(some){return  some;},
-  rformance=[1,1], teamwork= 0,moreClear=1,              or={toMake:noop},forAll=noop, comes=noop, of=out=   love,
-  deserves=noop,respect,asIt={should:noop},              mustFight="fighter",statements={toBuild:noop},  theTruth,
-  avoid       =     noop,             yawn,              thatLives=noop,andAll = beforeThe,here;function noop(){};
-  function thatLives(){      you="fighter";              here={fighter:noop};}; function beforeThe(){return {"is":
-  noop};};
+  var   littleCoder,       yourWay, advice,              dontLet=function(){return{"is":keepTrying};},                    out,
+  willPeople =  { say:keepTrying}, p,though              =keepTrying, advice, truly, good,e,love=function(some){return some;},
+  rformance=[1,1], teamwork= 0,moreClear=1,              or = {toMake:keepTrying}, forAll=keepTrying, comes=keepTrying,of=out=
+  love,deserves=keepTrying,respect,  asIt={              should:keepTrying},   mustFight="fighter",       statements={toBuild:
+  keepTrying},theTruth,   avoid=keepTrying,              yawn,thatLives=keepTrying,andAll=beforeThe,here;function keepTrying()
+  {};function thatLives(){   you="fighter";              here={fighter:keepTrying};}; function beforeThe(){      return {"is":
+  keepTrying};};
   
   
   
