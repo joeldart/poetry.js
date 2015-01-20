@@ -1,5 +1,70 @@
+<!doctype html>
 <html>
+    <head>
+    <style>
+        *{
+            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        p{
+            white-space: pre;
+        }
+        </style>
+    </head>
 <body>
-<script src="variation1.js" type="text/javascript"></script>
+    <p><span data-index="-99">(function (a, lity) {</span>
+    <span data-index="-98">var iation = 1,</span> 
+        <span>i = {},</span> <span>know,</span> <span>my = { fate: undefined, hate: "destroys" },</span>
+        <span>vileBetrayals = {},</span> <span>to,</span> <span>regret,</span> <span data-flipgroup="1">heart = (i["prayThe"] = <span data-flipgroup="1">vileBetrayals["are"] = function (few) { }),</span></span><span>
+        butDare = function (i) {
+            <span data-index="99" id="forever">while (i.take)</span> { <span data-index="100" id="goto-forever">continue;</span> }
+                <span data-index="101">healing;}</span></span>, 
+        
+        <span>Lord = function () { };</span>
+
+    <span>for (this,
+!!i;</span><span> know
+        && heart;</span>
+        <span>doesBreak</span><span>) {</span>
+        <span>what = </span><span>vileBetrayals.are(my.fate);</span>
+    }
+    <span>i.prayThe(Lord, my.soul, "toTake");</span>
+    <span>butDare({ yeNot: to, take: my.hate });</span>
+<span data-index="-100">} ());</span>
+    </p>
+<script>
+    var domEls = document.querySelectorAll("span");
+    domEls.splice = Array.prototype.splice;
+    var items = domEls.splice(0);
+    var origItems = items.slice(0);
+    items.sort(function (a, b) {
+        var aIndex = parseInt(a.dataset.index) || 0;
+        var bIndex = parseInt(b.dataset.index) || 0;
+        if (aIndex === bIndex) {
+            aIndex = origItems.indexOf(a);
+            bIndex = origItems.indexOf(b);
+            if (a.dataset.flipgroup === b.dataset.flipgroup && !!a.dataset.flipgroup) {
+                return bIndex - aIndex;   
+            } else {
+                return aIndex - bIndex;
+            }
+        } else if (aIndex < bIndex){
+            return -1;
+        } else {
+            return 1;   
+        }
+    });
+    var counter = 0;
+    var curr = items[0];
+    setInterval(function () { 
+        curr.style.background = "transparent"; 
+        curr = items[counter]; 
+        curr.style.background = "yellow"; 
+        counter++;
+        counter = counter % items.length;
+        if (curr.id === "goto-forever") {
+            counter = counter - 2;   
+        }
+    }, 500)
+</script>
 </body>
 </html>
