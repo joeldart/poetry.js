@@ -8,9 +8,17 @@
         p{
             white-space: pre;
         }
+        body{
+            opacity: 1;   
+            transition: 3s;
+            transition-property: opacity;
+        }
+        body.end {
+            opacity: 0;   
+        }
         </style>
     </head>
-<body>
+<body class="end">
     <p><span data-index="-99">(function (a, lity) {</span>
     <span data-index="-98">var iation = 1,</span> 
         <span>i = {},</span> <span>know,</span> <span>my = { fate: undefined, hate: "destroys" },</span>
@@ -24,8 +32,8 @@
     <span>for (this,
 !!i;</span><span> know
         && heart;</span>
-        <span>doesBreak</span><span>) {</span>
-        <span>what = </span><span>vileBetrayals.are(my.fate);</span>
+        <span>doesBreak</span>) {
+        <span data-flipgroup="2">what = <span data-flipgroup="2">vileBetrayals.are(my.fate);</span></span>
     }
     <span>i.prayThe(Lord, my.soul, "toTake");</span>
     <span>butDare({ yeNot: to, take: my.hate });</span>
@@ -53,16 +61,61 @@
             return 1;   
         }
     });
-    var counter = 0;
-    var curr = items[0];
-    setInterval(function () { 
-        curr.style.background = "transparent"; 
-        curr = items[counter]; 
-        curr.style.background = "yellow"; 
-        counter++;
-        counter = counter % items.length;
-        if (curr.id === "goto-forever") {
-            counter = counter - 2;   
+    var loopCounterMAX = 15;
+    var introPAUSE = 6;
+    var outroPAUSE = 10;
+    var animation = {
+        counter: 0,
+        loopCounter: 0,
+        isIntro: true,
+        isOutro: false,
+        curr: items[0],
+        intro: function () {
+            document.body.classList.remove("end");
+            if (this.counter > introPAUSE) {
+                this.isIntro = false;
+                this.curr = items[0];
+                this.counter = 0;
+                this.loopCounter = 0;
+            } else {
+                this.counter ++;   
+            }            
+        },
+        step: function () {
+            this.curr.style.background = "transparent"; 
+            this.curr = items[this.counter]; 
+            this.curr.style.background = "yellow"; 
+            this.counter++;
+            this.counter = this.counter % items.length;
+            if (this.curr.id === "goto-forever") {
+                this.counter = this.counter - 2;
+                this.loopCounter++;
+                if (this.loopCounter > loopCounterMAX) {
+                    this.isOutro = true;
+                    this.counter = 0;
+                }
+            }
+        },
+        outro: function () {
+            document.body.classList.add("end");
+            
+            if (this.counter > outroPAUSE) {
+                this.curr.style.background = "transparent"; 
+                this.isOutro = false;
+                this.isIntro = true;
+                this.counter = 0;
+            } else {
+                this.counter++;
+            }
+        }
+    };
+    setInterval(function () {
+        if (animation.isIntro) {
+            animation.intro();   
+        } else if (animation.isOutro) {
+            animation.outro();   
+        } else {
+            animation.step();   
         }
     }, 500)
 </script>
